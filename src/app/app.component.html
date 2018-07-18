@@ -1,7 +1,11 @@
-<agm-map [latitude]="40.971694" [longitude]="29.152607" [zoom]="17" >
-  <agm-marker [latitude]="40.972756" [longitude]="29.152908">
-    <agm-info-window>Deneme</agm-info-window>
-  </agm-marker>
+<agm-map [latitude]="40.971694" [longitude]="29.152607" [zoom]="17" [styles]="styles">
+  <!-- <agm-marker [latitude]="40.972918" [longitude]="29.152632">
+    <agm-info-window>Rektörlük</agm-info-window>
+  </agm-marker> -->
+  <agm-marker *ngFor="let marker of markers" 
+  [latitude]="marker[1]" [longitude]="marker[2]" [iconUrl]="marker[3]">
+  <agm-info-window>{{marker[0]}}</agm-info-window>
+</agm-marker>
 </agm-map>
 
 <router-outlet></router-outlet>
