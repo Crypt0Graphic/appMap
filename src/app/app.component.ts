@@ -12,7 +12,7 @@ export class AppComponent {
   //draggable: boolean = false;
   lat: number = 51.678418;
   lng: number = 7.809007;
-  zoom: 13;
+  zoom:number = 16;
   styles = Styles;
   markers = [
     ['Rektörlük', 40.972918, 29.152632, "http://maps.google.com/mapfiles/kml/pal3/icon0.png"],
