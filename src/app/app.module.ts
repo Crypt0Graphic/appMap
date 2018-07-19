@@ -8,10 +8,16 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AgmCoreModule } from '@agm/core';
 import { AgmSnazzyInfoWindowModule } from '@agm/snazzy-info-window';
+import { NavComponent } from './core/nav/nav.component';
+import { MapComponent } from './map/map.component';
+import { RectorateComponent } from './rectorate/rectorate.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    NavComponent,
+    MapComponent,
+    RectorateComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,12 @@
+<agm-map #gm [latitude]="40.971694" [longitude]="29.152607" [zoom]="zoom" [styles]="styles">
+  <agm-marker *ngFor="let marker of markers" [latitude]="marker[1]" 
+  [longitude]="marker[2]" [iconUrl]="marker[3]">
+    <!-- <agm-info-window #infoWindow>{{marker[0]}}</agm-info-window> -->
+    <agm-snazzy-info-window [maxWidth]="350" [closeWhenOthersOpen]="true">
+      <ng-template>
+        {{marker[0]}}
+        <a [routerLink]="marker[3]">Bina Bilgisi</a>
+      </ng-template>
+    </agm-snazzy-info-window>
+  </agm-marker>
+</agm-map>
