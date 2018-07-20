@@ -1,4 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
+$primary-blue: #003669;
+$secondary-blue: #175099;
+$third-blue: #4FACD2;
 
 html, body {
     height: 100%;
@@ -27,6 +30,22 @@ body {
         text-decoration: underline;
         font-size: 0.8em;
     }
+}
+
+.sub-page{
+    height:100vh;
+    color: white;
+    background-color: $secondary-blue;
+    .row{
+        line-height: 50px;
+    }
+}
+
+.sub-page-title{
+    background-color: $primary-blue;
+    line-height: 90px; 
+    font-size: 1.2em;
+    text-align: center;
 }
 
 
