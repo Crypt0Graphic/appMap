@@ -6,6 +6,8 @@ import { RectorateComponent } from './rectorate/rectorate.component';
 const routes: Routes = [
   {path:'harita', component: MapComponent},
   {path:'rektorluk', component: RectorateComponent},
+  {path:'hukuk', component: RectorateComponent},
+  {path:'muhendislik', component: RectorateComponent},
   {path:'', component: MapComponent, pathMatch:'full'}
 ];
 

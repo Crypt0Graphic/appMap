@@ -3,7 +3,7 @@ export let Styles = [
           "elementType": "geometry",
           "stylers": [
             {
-              "color": "#ebe3cd"
+              "color": "#465600" // Bina
             }
           ]
         },
@@ -36,7 +36,7 @@ export let Styles = [
           "elementType": "geometry",
           "stylers": [
             {
-              "color": "#dfd2ae"
+              "color": "#6D8700"
             }
           ]
         },
@@ -45,7 +45,7 @@ export let Styles = [
           "elementType": "geometry",
           "stylers": [
             {
-              "color": "#dfd2ae"
+              "color": "#6D8700" //Yeşil Yap
             }
           ]
         },
@@ -63,7 +63,7 @@ export let Styles = [
           "elementType": "geometry",
           "stylers": [
             {
-              "color": "#f5f1e6"
+              "color": "#C0CE87"
             }
           ]
         },

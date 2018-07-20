@@ -11,12 +11,24 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-// .si-content-wrapper {
-//     background-color: #e5e5e5 !important;
-// }
+.si-content-wrapper {
+    padding: 20px !important;    
+    border: 1px solid #FFF !important;
+}
+
 
 .si-content {
-    color: #24365F !important;
+    color: #FFFFFF !important;
     font-size: 16px  !important;
+    width: 100px;;
+
+    a{
+        color: #4FACD2;
+        text-decoration: underline;
+        font-size: 0.8em;
+    }
 }
+
+
+
 
