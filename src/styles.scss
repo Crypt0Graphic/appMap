@@ -15,40 +15,55 @@ body {
 }
 
 .si-content-wrapper {
-    padding: 20px !important;    
+    padding: 20px !important;
     border: 1px solid #FFF !important;
 }
-
 
 .si-content {
     color: #FFFFFF !important;
     font-size: 16px  !important;
-    width: 100px;;
+    width: 100px;
 
-    a{
+    a {
         color: #4FACD2;
         text-decoration: underline;
         font-size: 0.8em;
     }
 }
 
-.sub-page{
-    height:100vh;
+.sub-page {
+    height: 100vh;
     color: white;
     background-color: $secondary-blue;
     font-size: 0.8em;
-    .row{
+
+    .row {
         line-height: 40px;
     }
 }
 
-.sub-page-title{
+.sub-page-title {
     background-color: $primary-blue;
-    line-height: 90px; 
+    line-height: 90px;
     font-size: 1.2em;
     text-align: center;
 }
 
+.ytp-toolbar {
+    background-color: $primary-blue;
+    color: #FFF;
+    font-size: 0.9em;
+    font-weight: normal;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    opacity: 0.9;
+}
 
+.fill-remaining-space {
+    /* This fills the remaining space, by using flexbox. 
+       Every toolbar row uses a flexbox row layout. */
+    flex: 1 1 auto;
+}
 
 
