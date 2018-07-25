@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Location } from '@angular/common';
 
 @Component({
   selector: 'ytp-root',
@@ -7,6 +8,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title: string = 'Yeditepe Üniversitesi';
+
+  constructor(private location: Location){}
+
+  refresh(){
+    location.reload();
+  }
 }
 
 
