@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatToolbarModule, MatIconModule, MatSidenavModule, MatButtonModule } from '@angular/material';
+import { MatToolbarModule, MatIconModule, MatSidenavModule, MatButtonModule, MatSnackBarModule } from '@angular/material';
 
 import { AgmCoreModule } from '@agm/core';
 import { AgmSnazzyInfoWindowModule } from '@agm/snazzy-info-window';
@@ -24,7 +24,7 @@ import { RectorateComponent } from './rectorate/rectorate.component';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatToolbarModule,MatIconModule, MatSidenavModule, MatButtonModule,
+    MatToolbarModule,MatIconModule, MatSidenavModule, MatButtonModule, MatSnackBarModule,
     NgbModule.forRoot(),
     AgmCoreModule.forRoot({
       apiKey: 'AIzaSyBo-lVaw1htN2-tuUbX0abk64re9mSIRfA'
