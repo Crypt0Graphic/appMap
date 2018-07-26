@@ -11,14 +11,27 @@ import { AgmCoreModule } from '@agm/core';
 import { AgmSnazzyInfoWindowModule } from '@agm/snazzy-info-window';
 import { NavComponent } from './core/nav/nav.component';
 import { MapComponent } from './map/map.component';
-import { RectorateComponent } from './rectorate/rectorate.component';
+import { AgmLocationMarker } from './map/location.directive';
+
+import { RectorateComponent } from './buildings/rectorate/rectorate.component';
+import { LawComponent } from './buildings/law/law.component';
+import { FineartsComponent } from './buildings/finearts/finearts.component';
+import { EngineeringComponent } from './buildings/engineering/engineering.component';
+import { SocialComponent } from './buildings/social/social.component';
+import { CommercialComponent } from './buildings/commercial/commercial.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavComponent,
     MapComponent,
-    RectorateComponent
+    RectorateComponent,
+    AgmLocationMarker,
+    LawComponent,
+    FineartsComponent,
+    EngineeringComponent,
+    SocialComponent,
+    CommercialComponent
   ],
   imports: [
     BrowserModule,

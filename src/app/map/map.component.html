@@ -1,5 +1,7 @@
 <div class="ytp-map">
+
   <agm-map #gm [latitude]="lat" [longitude]="lng" [zoom]="zoom" [styles]="styles" [streetViewControl]="false">
+
     <agm-marker *ngFor="let marker of markers" [latitude]="marker[1]" [longitude]="marker[2]" [iconUrl]="marker[3]">
       <!-- <agm-info-window #infoWindow>{{marker[0]}}</agm-info-window> -->
       <agm-snazzy-info-window [maxWidth]="400" [closeWhenOthersOpen]="true" [backgroundColor]="'rgb(23,80,153)'">
@@ -10,10 +12,9 @@
         </ng-template>
       </agm-snazzy-info-window>
     </agm-marker>
-    <agm-marker [latitude]="latCurrent" [longitude]="lngCurrent" [iconUrl]="'./assets/img/marker.png'">
-      <agm-info-window>
-        Buradasınız!
-      </agm-info-window>
-    </agm-marker>
+
+    <agm-location-marker></agm-location-marker>
+
   </agm-map>
+  
 </div>

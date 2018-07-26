@@ -1,6 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Location } from '@angular/common';
-
 
 @Component({
   selector: 'ytp-rectorate',
@@ -9,13 +7,9 @@ import { Location } from '@angular/common';
 })
 export class RectorateComponent implements OnInit {
 
-  constructor(private _location: Location) { }
+  constructor() { }
 
   ngOnInit() {
-  }
-
-  backClicked() {
-    this._location.back();
   }
 
 }

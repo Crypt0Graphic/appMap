@@ -1,7 +1,5 @@
 <!-- <ytp-nav></ytp-nav> -->
 
-
-
 <mat-sidenav-container class="ytp-sidenav-container">
 
     <mat-sidenav #sidenav class="ytp-sidenav">
@@ -9,14 +7,31 @@
     </mat-sidenav>
 
     <div class="ytp-sidenav-content">
-        <!-- <button type="button" mat-button (click)="sidenav.open()">Open</button> -->
+
         <mat-toolbar class="ytp-toolbar">
-            <mat-icon class="cursor" (click)="refresh()">pin_drop</mat-icon>
-            <span class="cursor" (click)="refresh()">YEDİTEPE ÜNİVERSİTESİ</span>
+
+            <button *ngIf="router.url === '/'; else leftBlock" mat-icon-button (click)="refresh()">
+                <mat-icon (click)="refresh()">pin_drop</mat-icon>YEDİTEPE ÜNİVERSİTESİ
+            </button>
+            <ng-template #leftBlock>
+                <button mat-icon-button routerLink="/">
+                    <mat-icon>pin_drop</mat-icon>{{pageTitle}}
+                </button>
+            </ng-template>
+
             <span class="fill-remaining-space"></span>
-            <mat-icon class="cursor" (click)="sidenav.toggle()">info</mat-icon>
-            
+
+            <button *ngIf="router.url === '/'; else rightBlock" mat-icon-button (click)="sidenav.toggle()">
+                <mat-icon>info</mat-icon>
+            </button>
+            <ng-template #rightBlock>
+                <button mat-icon-button routerLink="/">
+                    <mat-icon>undo</mat-icon>
+                </button>
+            </ng-template>
+
         </mat-toolbar>
+
     </div>
 
     <router-outlet></router-outlet>

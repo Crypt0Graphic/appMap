@@ -36,18 +36,13 @@ body {
     color: white;
     background-color: $secondary-blue;
     font-size: 0.8em;
+    margin-top:56px;
 
     .row {
         line-height: 40px;
     }
 }
 
-.sub-page-title {
-    background-color: $primary-blue;
-    line-height: 90px;
-    font-size: 1.2em;
-    text-align: center;
-}
 
 .ytp-toolbar {
     background-color: $primary-blue;
