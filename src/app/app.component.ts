@@ -14,7 +14,7 @@ export class AppComponent implements OnInit {
   title: string = 'Yeditepe Üniversitesi';
   pageTitle: any;
 
-  constructor(private location: Location, private router: Router) { }
+  constructor(private location: Location, public router: Router) { }
 
   refresh() {
     location.reload();
