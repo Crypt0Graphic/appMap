@@ -11,12 +11,16 @@
         <mat-toolbar class="ytp-toolbar">
 
             <button *ngIf="router.url === '/'; else leftBlock" mat-icon-button (click)="refresh()">
-                <mat-icon (click)="refresh()">pin_drop</mat-icon>YEDİTEPE ÜNİVERSİTESİ
+                <mat-icon (click)="refresh()">pin_drop</mat-icon>
+            </button>
+            <button *ngIf="router.url === '/'" mat-button (click)="refresh()">
+                YEDİTEPE ÜNİVERSİTESİ
             </button>
             <ng-template #leftBlock>
                 <button mat-icon-button routerLink="/">
-                    <mat-icon>pin_drop</mat-icon>{{pageTitle}}
+                    <mat-icon>pin_drop</mat-icon>
                 </button>
+                <button mat-button>{{pageTitle}}</button>
             </ng-template>
 
             <span class="fill-remaining-space"></span>
