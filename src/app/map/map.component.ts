@@ -19,6 +19,12 @@ export class MapComponent implements OnInit {
   styles = Styles;
   markers = Markers;
 
+  paths = [
+    { lat: 40.972585, lng: 29.152288 },
+    { lat: 40.971815, lng: 29.152744 },
+    { lat: 40.971742, lng: 29.152720 }
+  ];
+
   ngOnInit() {
   }
 
