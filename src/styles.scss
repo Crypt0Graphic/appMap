@@ -60,7 +60,7 @@ footer {
     // height: 100vh;
     color: white;
     font-size: 0.8em;
-    margin-top:56px;
+    margin-top:64px;
 
     .row {
         line-height: 40px;
@@ -103,7 +103,10 @@ footer {
 }
 
 .ytp-sidenav{
-    width:200px;
+    width:250px;
+    .mat-list-item{
+        font-size: 0.8em !important;
+    }    
 }
 
 
