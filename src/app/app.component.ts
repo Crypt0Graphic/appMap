@@ -1,7 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { Location } from '@angular/common';
 import { Router, NavigationEnd } from '@angular/router';
-import {filter} from 'rxjs/operators';
+import { filter } from 'rxjs/operators';
+import { ILocation } from './core/ilocation';
+import { LocationService } from './core/location.service';
 
 
 @Component({
@@ -13,8 +15,9 @@ export class AppComponent implements OnInit {
 
   title: string = 'Yeditepe Üniversitesi';
   pageTitle: any;
+  locations: ILocation[];
 
-  constructor(private location: Location, public router: Router) { }
+  constructor(private location: Location, public router: Router, private locationService: LocationService) { }
 
   refresh() {
     location.reload();
@@ -36,6 +39,12 @@ export class AppComponent implements OnInit {
           }
         }
       });
+
+    this.locationService.getLocations((error, data) => {
+      this.locations = data;
+      console.log(this.locations);
+      
+    });
   }
 }
 

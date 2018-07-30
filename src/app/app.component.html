@@ -3,75 +3,15 @@
 <mat-sidenav-container class="ytp-sidenav-container">
 
     <mat-sidenav #sidenav class="ytp-sidenav">
+        <mat-toolbar class="ytp-toolbar">
+            İndeks
+        </mat-toolbar>
         <mat-list>
-            <mat-list-item>Rektörlük (1)</mat-list-item>
-            <mat-divider></mat-divider>
-            <mat-list-item>Mali İşler (1)</mat-list-item>
-            <mat-divider></mat-divider>
-            <mat-list-item>Öğrenci İşleri (1)</mat-list-item>
-            <mat-divider></mat-divider>
-            <mat-list-item>İngilizce Hazırlık Okulu (Merkez) (1)</mat-list-item>
-            <mat-divider></mat-divider>
-            <mat-list-item>Bilgi Merkezi (1)</mat-list-item>
-            <mat-divider></mat-divider>
-            <mat-list-item>Bilgi İşlem Merkezi (1)</mat-list-item>
-            <mat-divider></mat-divider>
-            <mat-list-item>Mühendislik Fakültesi (2)</mat-list-item>
-            <mat-divider></mat-divider>
-            <mat-list-item>Sağlık Bilimleri Fakültesi (2)</mat-list-item>
-            <mat-divider></mat-divider>
-            <mat-list-item>Tıp Fakültesi (2)</mat-list-item>
-            <mat-divider></mat-divider>        
-            <mat-list-item>Diş Hekimliği Fakültesi (2)</mat-list-item>
-            <mat-divider></mat-divider>        
-            <mat-list-item>Sağlık Bilimleri Enstitüsü (2)</mat-list-item>
-            <mat-divider></mat-divider>
-            <mat-list-item>Fen Fakültesi (Fizik ve Matematik Böl.) (2)</mat-list-item>
-            <mat-divider></mat-divider>
-            <mat-list-item>Ticari Bilimler Fakültesi (3)</mat-list-item>
-            <mat-divider></mat-divider>
-            <mat-list-item>Uygulamalı Bilimler Yüksek Okulu (3)</mat-list-item>
-            <mat-divider></mat-divider>
-            <mat-list-item>Güzel Sanatlar Fakültesi (6)</mat-list-item>
-            <mat-divider></mat-divider>
-            <mat-list-item>Eğitim Fakültesi (6)</mat-list-item>
-            <mat-divider></mat-divider>
-            <mat-list-item>İletişim Fakültesi (6)</mat-list-item>
-            <mat-divider></mat-divider>
-            <mat-list-item>Mimarlık Fakültesi (6)</mat-list-item>
-            <mat-divider></mat-divider>
-            <mat-list-item>Fen - Edebiyat Fakültesi (6)</mat-list-item>
-            <mat-divider></mat-divider>
-            <mat-list-item>Eğitim Bilimleri Enstitüsü (6)</mat-list-item>
-            <mat-divider></mat-divider>
-            <mat-list-item>Yabancı Diller Yüksek Okulu (6)</mat-list-item>
-            <mat-divider></mat-divider>
-            <mat-list-item>Hukuk Fakültesi (4)</mat-list-item>
-            <mat-divider></mat-divider>
-            <mat-list-item>İktisadi ve İdari Bilimler Fakültesi (4)</mat-list-item>
-            <mat-divider></mat-divider>
-            <mat-list-item>Sosyal Bilimler Enstitüsü (4)</mat-list-item>
-            <mat-divider></mat-divider>        
-            <mat-list-item>Fransızca Hazırlık (4)</mat-list-item>
-            <mat-divider></mat-divider>  
-            <mat-list-item>Tanıtım Günleri (5)</mat-list-item>
-            <mat-divider></mat-divider>
-            <mat-list-item>İstek Servis (5)</mat-list-item>
-            <mat-divider></mat-divider>
-            <mat-list-item>Kültür ve Spor Müdürlüğü (5)</mat-list-item>
-            <mat-divider></mat-divider>
-            <mat-list-item>Banka (5)</mat-list-item>
-            <mat-divider></mat-divider>
-            <mat-list-item>Burçak Gıda (5)</mat-list-item>
-            <mat-divider></mat-divider>
-            <mat-list-item>Fitness Center (5)</mat-list-item>
-            <mat-divider></mat-divider>
-            <mat-list-item>Kitap Evi (5)</mat-list-item>
-            <mat-divider></mat-divider>
-            <mat-list-item>Kuaför (5)</mat-list-item>
-            <mat-divider></mat-divider>
-            <mat-list-item>Kapalı ve Açık Yüzme Havuzu (5)</mat-list-item>
-            <mat-divider></mat-divider>
+            <!-- <mat-list-item *ngFor="let location of locations">{{location.name}} {{location.number}}</mat-list-item>-->
+            <ng-template ngFor let-location [ngForOf]="locations">
+                    <mat-list-item>{{location.name}} ({{location.number}})</mat-list-item>
+                    <mat-divider></mat-divider>
+            </ng-template>
         </mat-list>
     </mat-sidenav>
 

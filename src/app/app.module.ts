@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -19,6 +20,7 @@ import { FineartsComponent } from './buildings/finearts/finearts.component';
 import { EngineeringComponent } from './buildings/engineering/engineering.component';
 import { SocialComponent } from './buildings/social/social.component';
 import { CommercialComponent } from './buildings/commercial/commercial.component';
+import { LocationService } from './core/location.service';
 
 @NgModule({
   declarations: [
@@ -36,6 +38,7 @@ import { CommercialComponent } from './buildings/commercial/commercial.component
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule,
     BrowserAnimationsModule,
     MatToolbarModule,MatIconModule, MatSidenavModule, MatButtonModule, MatSnackBarModule, MatListModule,
     NgbModule.forRoot(),
@@ -44,7 +47,7 @@ import { CommercialComponent } from './buildings/commercial/commercial.component
     }),
     AgmSnazzyInfoWindowModule
   ],
-  providers: [],
+  providers: [LocationService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
