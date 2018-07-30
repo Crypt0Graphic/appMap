@@ -59,7 +59,6 @@ footer {
 .sub-page {
     // height: 100vh;
     color: white;
-    background-color: $secondary-blue;
     font-size: 0.8em;
     margin-top:56px;
 
@@ -78,6 +77,10 @@ footer {
     top: 0;
     z-index: 10;
     opacity: 0.9;
+}
+
+.mat-list{
+    padding-top: 0px !important;
 }
 
 .fill-remaining-space {
