@@ -26,18 +26,18 @@ footer {
     opacity: 0.9;
 }
 
-.mat-button{
+.mat-button {
     padding: 0 8px !important;
 }
 
-.mat-icon-button{
-    width: 20px !important;
+.mat-icon-button {
+    width: 22px !important;
 }
 
 .mat-button:focus, .mat-icon-button:focus {
     outline: none;
     border: 0;
- }
+}
 
 .si-content-wrapper {
     padding: 18px !important;
@@ -60,44 +60,57 @@ footer {
     // height: 100vh;
     color: white;
     font-size: 0.8em;
-    margin-top:64px;
+    margin-top: 64px;
 
     .row {
         line-height: 40px;
     }
 }
 
-
 .ytp-toolbar {
     background-color: $primary-blue;
     color: #FFF;
-    font-size: 0.9em;
-    font-weight: normal;
+    font-size: 0.8em;
     position: fixed;
     top: 0;
     z-index: 10;
     opacity: 0.9;
+    button{
+        font-weight: 100;
+    }
 }
 
+@media (max-width: 599px)
+{
+    .mat-toolbar-row, .mat-toolbar-single-row{
+        height: 44px !important;
+    }
+    .index-form {
+        margin-top: 44px;
+    }
+    .sub-page {
+        margin-top: 44px;
+    }
+}
 
 .index-form {
-    margin-top:64px;
+    margin-top: 64px;
     min-width: 150px;
     max-width: 500px;
     width: 100%;
     padding: 0 16px 0 16px;
-  }
+}
 
-  .form-full-width {
+.form-full-width {
     width: 100%;
-  }
+}
 
-  mat-hint{
-      color: #bbb !important;
-      font-weight: 100 !important;
-  }
+mat-hint {
+    color: #bbb !important;
+    font-weight: 100 !important;
+}
 
-.mat-list{
+.mat-list {
     padding-top: 0px !important;
 }
 
@@ -107,26 +120,23 @@ footer {
     flex: 1 1 auto;
 }
 
-.ytp-sidenav-container{
+.ytp-sidenav-container {
     flex: 1;
-    width:100%;
+    width: 100%;
     min-width: 100%;
 }
 
-.ytp-sidenav-content{
+.ytp-sidenav-content {
     display: flex;
     height: 100%;
     align-items: center;
     justify-content: center;
 }
 
-.ytp-sidenav{
-    width:250px;
-    .mat-list-item{
+.ytp-sidenav {
+    width: 250px;
+
+    .mat-list-item {
         font-size: 0.8em !important;
-    }    
+    }
 }
-
-
-
-
