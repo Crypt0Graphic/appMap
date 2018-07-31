@@ -6,11 +6,20 @@
         <mat-toolbar class="ytp-toolbar">
             İndeks
         </mat-toolbar>
+        <form id="filterForm" class="index-form">
+            <mat-form-field class="form-full-width">
+                <input matInput placeholder="Yer ara" [(ngModel)]="indexFilter" value = "" name="indexInput">
+                <button mat-button *ngIf="indexFilter" matSuffix mat-icon-button aria-label="Clear" (click)="indexFilter=''">
+                    <mat-icon>close</mat-icon>
+                </button>
+                <mat-hint align="start"><strong>Bina numaraları parantez içindedir.</strong> </mat-hint>
+            </mat-form-field>
+        </form>
         <mat-list>
             <!-- <mat-list-item *ngFor="let location of locations">{{location.name}} {{location.number}}</mat-list-item>-->
-            <ng-template ngFor let-location [ngForOf]="locations">
-                    <mat-list-item>{{location.name}} ({{location.number}})</mat-list-item>
-                    <mat-divider></mat-divider>
+            <ng-template ngFor let-location [ngForOf]="locations | filter:indexFilter">
+                <mat-list-item>{{location.name}} ({{location.number}})</mat-list-item>
+                <mat-divider></mat-divider>
             </ng-template>
         </mat-list>
     </mat-sidenav>

@@ -1,12 +1,14 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
+import { FormsModule }   from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatToolbarModule, MatIconModule, MatSidenavModule, MatButtonModule, MatSnackBarModule, MatListModule } from '@angular/material';
+import { MatToolbarModule, MatIconModule, MatSidenavModule, MatButtonModule, MatSnackBarModule, 
+         MatListModule, MatFormFieldModule, MatInputModule } from '@angular/material';
 
 import { AgmCoreModule } from '@agm/core';
 import { AgmSnazzyInfoWindowModule } from '@agm/snazzy-info-window';
@@ -20,7 +22,7 @@ import { FineartsComponent } from './buildings/finearts/finearts.component';
 import { EngineeringComponent } from './buildings/engineering/engineering.component';
 import { SocialComponent } from './buildings/social/social.component';
 import { CommercialComponent } from './buildings/commercial/commercial.component';
-import { LocationService } from './core/location.service';
+import { FilterPipe } from './core/filter.pipe';
 
 @NgModule({
   declarations: [
@@ -33,21 +35,24 @@ import { LocationService } from './core/location.service';
     FineartsComponent,
     EngineeringComponent,
     SocialComponent,
-    CommercialComponent
+    CommercialComponent,
+    FilterPipe
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    FormsModule,
     BrowserAnimationsModule,
-    MatToolbarModule,MatIconModule, MatSidenavModule, MatButtonModule, MatSnackBarModule, MatListModule,
+    MatToolbarModule,MatIconModule, MatSidenavModule, MatButtonModule, MatSnackBarModule, 
+    MatListModule, MatFormFieldModule, MatInputModule,
     NgbModule.forRoot(),
     AgmCoreModule.forRoot({
       apiKey: 'AIzaSyBo-lVaw1htN2-tuUbX0abk64re9mSIRfA'
     }),
     AgmSnazzyInfoWindowModule
   ],
-  providers: [LocationService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

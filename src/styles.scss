@@ -79,9 +79,23 @@ footer {
     opacity: 0.9;
 }
 
-mat-sidenav .mat-list{
+
+.index-form {
     margin-top:64px;
-}
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+    padding: 0 16px 0 16px;
+  }
+
+  .form-full-width {
+    width: 100%;
+  }
+
+  mat-hint{
+      color: #bbb !important;
+      font-weight: 100 !important;
+  }
 
 .mat-list{
     padding-top: 0px !important;

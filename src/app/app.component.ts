@@ -16,6 +16,7 @@ export class AppComponent implements OnInit {
   title: string = 'Yeditepe Üniversitesi';
   pageTitle: any;
   locations: ILocation[];
+  indexFilter:any = null;
 
   constructor(private location: Location, public router: Router, private locationService: LocationService) { }
 
@@ -23,7 +24,12 @@ export class AppComponent implements OnInit {
     location.reload();
   }
 
+  refreshFilter(){
+    this.indexFilter = null;
+  }
+
   ngOnInit() {
+
     this.router.events.pipe(
       filter((event: any) => event instanceof NavigationEnd))
       .subscribe(() => {
@@ -42,9 +48,9 @@ export class AppComponent implements OnInit {
 
     this.locationService.getLocations((error, data) => {
       this.locations = data;
-      console.log(this.locations);
-      
+      var sorted = data.sort((a,b) => a.name.localeCompare(b.name));
     });
+
   }
 }
 
