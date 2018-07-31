@@ -18,7 +18,7 @@
         <mat-list>
             <!-- <mat-list-item *ngFor="let location of locations">{{location.name}} {{location.number}}</mat-list-item>-->
             <ng-template ngFor let-location [ngForOf]="locations | filter:indexFilter">
-                <mat-list-item>{{location.name}} ({{location.number}})</mat-list-item>
+                <mat-list-item>{{location.name}} <span class="building-number">&nbsp;({{location.number}})</span></mat-list-item>
                 <mat-divider></mat-divider>
             </ng-template>
         </mat-list>

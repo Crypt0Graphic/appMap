@@ -1,6 +1,5 @@
 import { GoogleMapsAPIWrapper } from '@agm/core';
 import { Directive, Output, EventEmitter } from '@angular/core';
-
 declare var google: any;
 
 @Directive({
@@ -20,7 +19,7 @@ export class AgmLocationMarker {
 
       this.map = map;
       navigator.geolocation.watchPosition(this.onPositionUpdate.bind(this), function(err) {
-        console.log('Konum bulunamadı!:', err)
+        console.log('Konum bulunamadı!', err)
       }, {
         enableHighAccuracy: true,
         timeout: 10000,
