@@ -1,13 +1,13 @@
 export let Markers = 
 [  
-['Rektörlük', 40.972693, 29.152903, "/assets/img/number_1_3.png", "./rektorluk"],
+['Rektörlük', 40.972877, 29.152653, "/assets/img/number_1_3.png", "./rektorluk"],
 ['Mühendislik', 40.972443, 29.151457, "/assets/img/number_2_3.png", "./muhendislik"],
 ['Hukuk', 40.971737, 29.153218, "/assets/img/number_4_3.png", "./hukuk"],
 ['Güzel Sanatlar', 40.970364, 29.154142, "/assets/img/number_6_3.png", "./gsf"],
 ['Ticari Bilimler', 40.973907, 29.152045, "/assets/img/number_3_3.png", "./ticari"],
 ['Sosyal Tesisler', 40.971377, 29.152731, "/assets/img/number_5_3.png", "./sosyal"],
 ['İng. Hazırlık Ek', 40.969754, 29.154992, "/assets/img/number_7_3.png"],
-['Sera', 40.974110, 29.154019, "/assets/img/garden2.png"],
+['Sera', 40.973676, 29.153293, "/assets/img/garden2.png"],
 ['Meydan', 40.973354, 29.151643, "/assets/img/citysquare2.png"],
 ['Ring Durağı', 40.974525, 29.152866, "/assets/img/bustour2.png"],
 ['Çamlık', 40.971946, 29.152286, "/assets/img/tree2.png"],

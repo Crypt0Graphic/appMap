@@ -4,6 +4,7 @@ import { Router, NavigationEnd } from '@angular/router';
 import { filter } from 'rxjs/operators';
 import { ILocation } from './core/ilocation';
 import { LocationService } from './core/location.service';
+import { locations } from './core/location';
 
 
 @Component({
@@ -42,14 +43,18 @@ export class AppComponent implements OnInit {
         }
       });
 
-    this.locationService.getLocations((error, data) => {
-      if (error) {
-        console.log("Hata!");
-      }
-      else {
-        this.locations = data.sort((a, b) => a.name.localeCompare(b.name));
-      }
-    });
+    // IIS'de Json sorun çıkardığı için servisi iptal ettim.
+
+    // this.locationService.getLocations((error, data) => {
+    //   if (error) {
+    //     console.log("Hata!");
+    //   }
+    //   else {
+    //     this.locations = data.sort((a, b) => a.name.localeCompare(b.name));
+    //   }
+    // });
+
+    this.locations = locations.sort((a, b) => a.name.localeCompare(b.name));
 
   }
 };

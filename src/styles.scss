@@ -3,6 +3,8 @@ $primary-blue: #003669;
 $secondary-blue: #175099;
 $third-blue: #4FACD2;
 
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700&subset=latin-ext');
+
 html, body {
     height: 100%;
 }
@@ -46,7 +48,8 @@ footer {
 
 .si-content {
     color: #FFFFFF !important;
-    font-size: 14px  !important;
+    font-size: 13px  !important;
+    font-weight: 400;
     width: 100px;
 
     a:link, a:visited, a:hover {
@@ -111,8 +114,8 @@ mat-hint {
 }
 
 .building-number {
-    color: #ccc !important;
-    font-weight: 100 !important;
+    color: $secondary-blue !important;
+    font-weight: 300 !important;
 }
 
 .mat-list {
