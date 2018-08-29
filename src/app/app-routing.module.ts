@@ -9,14 +9,14 @@ import { EngineeringComponent } from './buildings/engineering/engineering.compon
 import { LawComponent } from './buildings/law/law.component';
 
 const routes: Routes = [
-  {path:'harita', component: MapComponent},
-  {path:'rektorluk', component: RectorateComponent, data :{title :'REKTÖRLÜK BİNASI'}},
-  {path:'hukuk', component: LawComponent, data :{title :'HUKUK BİNASI'}},
-  {path:'muhendislik', component: EngineeringComponent, data :{title :'MÜHENDİSLİK BİNASI'}},
-  {path:'gsf', component: FineartsComponent, data :{title :'GÜZEL SANATLAR BİNASI'}},
-  {path:'ticari', component: CommercialComponent, data :{title :'TİCARİ BİLİMLER BİNASI'}},
-  {path:'sosyal', component: SocialComponent, data :{title :'SOSYAL TESİSLER'}},
-  {path:'', component: MapComponent, pathMatch:'full'}
+  { path: 'harita', component: MapComponent },
+  { path: 'rektorluk', component: RectorateComponent, data: { title: 'REKTÖRLÜK BİNASI' } },
+  { path: 'hukuk', component: LawComponent, data: { title: 'HUKUK BİNASI' } },
+  { path: 'muhendislik', component: EngineeringComponent, data: { title: 'MÜHENDİSLİK BİNASI' } },
+  { path: 'gsf', component: FineartsComponent, data: { title: 'GÜZEL SANATLAR BİNASI' } },
+  { path: 'ticari', component: CommercialComponent, data: { title: 'TİCARİ BİLİMLER BİNASI' } },
+  { path: 'sosyal', component: SocialComponent, data: { title: 'SOSYAL TESİSLER' } },
+  { path: '', component: MapComponent, pathMatch: 'full' }
 ];
 
 @NgModule({
