@@ -26,11 +26,19 @@ export const locations: ILocation[] = [
     number: 1
   },
   {
-    name: 'Kurumsal İletişim',
+    name: 'PTT (Postane)',
+    number: 1
+  },
+  {
+    name: 'Atatürk İlkeleri ve İnkılap Tar. Ens.',
     number: 1
   },
   {
     name: 'Mühendislik Fakültesi',
+    number: 2
+  },
+  {
+    name: 'Eczacılık Fakültesi',
     number: 2
   },
   {
@@ -50,7 +58,11 @@ export const locations: ILocation[] = [
     number: 2
   },
   {
-    name: 'Fen Fakültesi (Fizik ve Matematik)',
+    name: 'Fen - Edebiyat Fak. (Fizik ve Matematik)',
+    number: 2
+  },
+  {
+    name: 'Fen Blimleri Enstitüsü',
     number: 2
   },
   {
